@@ -1,0 +1,338 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+    color: #fff;
+    background-image: url("../barbeiro%20profissional.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 64px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 10px;
+    color: #d4a253;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin: 0 0 40px;
+    color: #bdbdbd;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d4a253;
+    color: #111;
+    padding: 12px 26px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #e2b467;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 70px 20px 40px;
+    background-color: #000;
+    background-image: url("../assets/banner-barbearia.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #d4a253;
+    /* dourado elegante */
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ccc;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #d4a253;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    border: 2px solid #2b2b2b;
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    color: #fff;
+    border-color: #d4a253;
+    background-color: rgba(212, 162, 83, 0.1);
+}
+
+
+/* Seção principal */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #d4a253;
+    color: #111;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.hero button:hover {
+    background-color: #e2b467;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Cards de serviços */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px 20px 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #2b2b2b;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: #d4a253;
+}
+
+.card p {
+    margin: 0;
+    color: #cfcfcf;
+    line-height: 1.5;
+}
+
+.card .price {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d4a253;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #d4a253;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Galeria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.gallery img {
+    border-radius: 10px;
+    border: 1px solid #2b2b2b;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.gallery video {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #2b2b2b;
+    background-color: #1b1b1b;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+    border-color: #d4a253;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+.gallery video:hover {
+    transform: scale(1.02);
+    border-color: #d4a253;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Formulários */
+form {
+    max-width: 520px;
+    margin: 0 auto;
+    display: grid;
+    gap: 14px;
+}
+
+label {
+    font-size: 14px;
+    color: #d9d9d9;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #2b2b2b;
+    background-color: #141414;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #d4a253;
+    box-shadow: 0 0 0 3px rgba(212, 162, 83, 0.2);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.helper-text {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #9f9f9f;
+}
+
+/* Contato */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.contact-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2b2b2b;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-card h4 {
+    margin: 0 0 8px;
+    color: #d4a253;
+}
+
+.contact-card p {
+    margin: 0;
+    color: #cfcfcf;
+}
+
+.contact-card a {
+    color: #cfcfcf;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 24px 20px;
+    background-color: #0b0b0b;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Gatti 💈</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Studio Gatti 💈</h1>
+        <p>Estilo clássico, acabamento moderno</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="../pages/sobre.html">Sobre</a>
+        <a href="../pages/servicos.html">Serviços</a>
+        <a href="../pages/galeria.html">Galeria</a>
+        <a href="../pages/agendamento.html">Agendamento</a>
+        <a href="../pages/contato.html">Contato</a>
+    </nav>
+
+
+    <section class="hero">
+        <div class="container">
+            <h2>Cortes precisos e barba impecável</h2>
+            <p>Atendimento personalizado, ambiente confortável e profissionais experientes.</p>
+            <a class="btn" href="../pages/agendamento.html">Agendar Agora</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3 class="section-title">Serviços em destaque</h3>
+            <p class="section-subtitle">Qualidade, cuidado e estilo em cada detalhe.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Corte Masculino</h3>
+                    <p>Clássico, degradê ou moderno. Ajuste perfeito ao seu estilo.</p>
+                    <p class="price">€25,00</p>
+                </div>
+                <div class="card">
+                    <h3>Barba Completa</h3>
+                    <p>Modelagem, hidratação e finalização com toalha quente.</p>
+                    <p class="price">€20,00</p>
+                </div>
+                <div class="card">
+                    <h3>Combo Corte + Barba</h3>
+                    <p>Visual alinhado com economia e praticidade.</p>
+                    <p class="price">€40,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3 class="section-title">Nossa barbearia</h3>
+            <p class="section-subtitle">Ambiente moderno, atendimento de primeira e experiência completa.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Equipe Experiente</h3>
+                    <p>Profissionais treinados, pontuais e focados no melhor resultado.</p>
+                </div>
+                <div class="card">
+                    <h3>Ambiente Premium</h3>
+                    <p>Conforto, limpeza e um espaço feito para você relaxar.</p>
+                </div>
+                <div class="card">
+                    <h3>Agendamento Fácil</h3>
+                    <p>Marque online, confirme pelo WhatsApp e pronto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3 class="section-title">Galeria</h3>
+            <p class="section-subtitle">Alguns cortes e detalhes do nosso trabalho.</p>
+            <div class="gallery">
+                <img alt="Corte 0" src="../corte%200.JPG">
+                <img alt="Corte 1" src="../corte%201.JPG">
+                <img alt="Corte 2" src="../corte%202.JPG">
+                <img alt="Corte 3" src="../corte%203.JPG">
+                <img alt="Corte masculino 4" src="../corte%204.JPG">
+                <img alt="Corte 5" src="../corte%205.JPG">
+                <img alt="Corte + barba 1" src="../corte%20%2B%20barba%201.JPG">
+                <img alt="Corte + barba 2" src="../corte%20%2B%20barba%202.JPG">
+                <img alt="Corte + barba" src="../corte%20%2Bbarba.JPG">
+                <video src="../barba%20jo%C3%A3o.MP4" autoplay loop muted playsinline></video>
+                <video src="../IJDH0051.MP4" autoplay loop muted playsinline></video>
+                <video src="../QBBK0223.MP4" autoplay loop muted playsinline></video>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3 class="section-title">Agende seu horário</h3>
+            <p class="section-subtitle">Preencha o formulário e entraremos em contato rapidamente.</p>
+            <form data-form>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+                </div>
+                <div>
+                    <label for="telefone">WhatsApp</label>
+                    <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required>
+                </div>
+                <div>
+                    <label for="servico">Serviço</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione</option>
+                        <option>Corte Masculino</option>
+                        <option>Barba Completa</option>
+                        <option>Combo Corte + Barba</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="data">Data preferida</label>
+                    <input id="data" name="data" type="text" class="date-picker" placeholder="Escolha uma data"
+                        required>
+                    <small class="helper-text">Dias esgotados não aparecem para seleção.</small>
+                </div>
+                <button class="btn" type="submit">Solicitar Agendamento</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3 class="section-title">Contato</h3>
+            <p class="section-subtitle">Fale conosco e tire suas dúvidas.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>Endereço</h4>
+                    <p><a href="https://www.google.com/maps/search/?api=1&query=1%20Merchant%27s%20Arch%2C%20Temple%20Bar%2C%20Dublin%2C%20D02%20YD98"
+                            target="_blank" rel="noopener">1 Merchant's Arch, Temple Bar, Dublin, D02 YD98</a></p>
+                </div>
+                <div class="contact-card">
+                    <h4>WhatsApp</h4>
+                    <p><a href="https://wa.me/353832071184" target="_blank" rel="noopener">+353 83 207 1184</a></p>
+                </div>
+                <div class="contact-card">
+                    <h4>Horário</h4>
+                    <p>Seg a Sáb: 9h às 20h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Studio Gatti 💈. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

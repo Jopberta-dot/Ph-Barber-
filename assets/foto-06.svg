@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g6" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#2e2e2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g6)"/>
+  <rect x="60" y="60" width="1080" height="680" rx="24" ry="24" fill="#1b1b1b" stroke="#d4a253" stroke-width="4"/>
+  <text x="50%" y="50%" fill="#d4a253" font-size="48" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" dominant-baseline="middle">Paulo Barbers • Detalhes</text>
+</svg>

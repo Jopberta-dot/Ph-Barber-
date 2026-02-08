@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento | Studio Gatti 💈</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Studio Gatti 💈</h1>
+        <p>Agende seu horário em poucos passos</p>
+    </header>
+
+    <nav>
+        <a href="../html/index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Agendamento</h2>
+            <p class="section-subtitle">Preencha e confirme pelo WhatsApp.</p>
+            <form data-form>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+                </div>
+                <div>
+                    <label for="telefone">WhatsApp</label>
+                    <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required>
+                </div>
+                <div>
+                    <label for="servico">Serviço</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione</option>
+                        <option>Corte Masculino - €25,00</option>
+                        <option>Barba Completa - €20,00</option>
+                        <option>Combo Corte + Barba - €40,00</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="data">Data preferida</label>
+                    <input id="data" name="data" type="text" class="date-picker" placeholder="Escolha uma data"
+                        required>
+                    <small class="helper-text">Horários esgotados não aparecem para seleção.</small>
+                </div>
+                <div>
+                    <label for="hora">Horário</label>
+                    <select id="hora" name="hora" required>
+                        <option value="">Selecione um horário</option>
+                        <option>09:00</option>
+                        <option>09:30</option>
+                        <option>10:00</option>
+                        <option>10:30</option>
+                        <option>11:00</option>
+                        <option>11:30</option>
+                        <option>12:00</option>
+                        <option>12:30</option>
+                        <option>13:00</option>
+                        <option>13:30</option>
+                        <option>14:00</option>
+                        <option>14:30</option>
+                        <option>15:00</option>
+                        <option>15:30</option>
+                        <option>16:00</option>
+                        <option>16:30</option>
+                        <option>17:00</option>
+                        <option>17:30</option>
+                        <option>18:00</option>
+                        <option>18:30</option>
+                        <option>19:00</option>
+                        <option>19:30</option>
+                        <option>20:00</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="observacoes">Observações</label>
+                    <textarea id="observacoes" name="observacoes" placeholder="Algum detalhe importante?"></textarea>
+                </div>
+                <button class="btn" type="submit">Solicitar Agendamento</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Studio Gatti 💈. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

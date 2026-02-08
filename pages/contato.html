@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Studio Gatti 💈</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Studio Gatti 💈</h1>
+        <p>Fale com a gente</p>
+    </header>
+
+    <nav>
+        <a href="../html/index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="agendamento.html">Agendamento</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <p class="section-subtitle">Estamos prontos para te atender.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>Endereço</h4>
+                    <p><a href="https://www.google.com/maps/search/?api=1&query=1%20Merchant%27s%20Arch%2C%20Temple%20Bar%2C%20Dublin%2C%20D02%20YD98"
+                            target="_blank" rel="noopener">1 Merchant's Arch, Temple Bar, Dublin, D02 YD98</a></p>
+                </div>
+                <div class="contact-card">
+                    <h4>WhatsApp</h4>
+                    <p><a href="https://wa.me/353832071184" target="_blank" rel="noopener">+353 83 207 1184</a></p>
+                </div>
+                <div class="contact-card">
+                    <h4>Horário</h4>
+                    <p>Seg a Sáb: 9h às 20h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h3 class="section-title">Envie uma mensagem</h3>
+            <p class="section-subtitle">Responderemos o mais rápido possível.</p>
+            <form data-form>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+                </div>
+                <button class="btn" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Studio Gatti 💈. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
