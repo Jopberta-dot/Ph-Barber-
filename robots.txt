@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jopberta-dot.github.io/Ph-barber/sitemap.xml
+Sitemap: https://jopberta-dot.github.io/Ph-Barber-/sitemap.xml
